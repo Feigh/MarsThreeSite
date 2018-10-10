@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarsThreeSite", "MarsThreeSite\MarsThreeSite.csproj", "{FB3E19AD-E9B6-4307-AA51-CDD2E9005ACC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsThreeLogging", "MarsThreeLogging\MarsThreeLogging.csproj", "{D47E2E8C-65D2-4A07-B1BC-F4D3A3EA9CFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB3E19AD-E9B6-4307-AA51-CDD2E9005ACC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB3E19AD-E9B6-4307-AA51-CDD2E9005ACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB3E19AD-E9B6-4307-AA51-CDD2E9005ACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB3E19AD-E9B6-4307-AA51-CDD2E9005ACC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D47E2E8C-65D2-4A07-B1BC-F4D3A3EA9CFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D47E2E8C-65D2-4A07-B1BC-F4D3A3EA9CFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D47E2E8C-65D2-4A07-B1BC-F4D3A3EA9CFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D47E2E8C-65D2-4A07-B1BC-F4D3A3EA9CFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {180FB22A-78B3-4ADA-B26B-237E5E2F591F}
+	EndGlobalSection
+EndGlobal

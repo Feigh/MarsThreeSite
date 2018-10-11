@@ -32,6 +32,6 @@ c:\users\admin\source\repos\MarsThreeSite\MarsThreeSite\obj\Debug\netcoreapp2.1\
 c:\users\admin\source\repos\MarsThreeSite\MarsThreeSite\obj\Debug\netcoreapp2.1\MarsThreeSite.dll
 c:\users\admin\source\repos\MarsThreeSite\MarsThreeSite\obj\Debug\netcoreapp2.1\MarsThreeSite.pdb
 c:\users\admin\source\repos\MarsThreeSite\MarsThreeSite\obj\Debug\netcoreapp2.1\MarsThreeSite.csproj.CopyComplete
-C:\Users\admin\source\repos\MarsThreeSite\MarsThreeSite\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 C:\Users\admin\source\repos\MarsThreeSite\MarsThreeSite\bin\Debug\netcoreapp2.1\MarsThreeLogging.dll
 C:\Users\admin\source\repos\MarsThreeSite\MarsThreeSite\bin\Debug\netcoreapp2.1\MarsThreeLogging.pdb
+C:\Users\admin\source\repos\MarsThreeSite\MarsThreeSite\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs

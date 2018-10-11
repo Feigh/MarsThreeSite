@@ -21,6 +21,7 @@ namespace MarsThreeSite.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.Page = "/images/pics/golden2.jpg";
             return View();
         }
 

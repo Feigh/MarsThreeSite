@@ -15,12 +15,14 @@ namespace MarsThreeSite
     {
         public static void Main(string[] args)
         {
-            CreateWebHostBuilder(args).Build().Run();
+            BuildWebHost(args).Run();
         }
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+        public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .ConfigureLogging(logging => { logging.AddDebug(); }) //logging.AddProvider(new MarsThreeLoggerProvider()); }) 
-                .UseStartup<Startup>();
+                .UseStartup<Startup>()
+                .Build();
+
     }
 }

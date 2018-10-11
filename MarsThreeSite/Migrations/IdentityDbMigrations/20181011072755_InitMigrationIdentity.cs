@@ -2,9 +2,9 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace MarsThreeSite.Data.Migrations
+namespace MarsThreeSite.Migrations.IdentityDbMigrations
 {
-    public partial class CreateIdentitySchema : Migration
+    public partial class InitMigrationIdentity : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

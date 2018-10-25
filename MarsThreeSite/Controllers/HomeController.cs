@@ -7,21 +7,26 @@ using System.IO;
 using Microsoft.AspNetCore.Mvc;
 using MarsThreeSite.Models;
 using Microsoft.Extensions.Logging;
+using MarsThreeSite.Controllers.Data_Access;
+using MarsThreeSite.Data;
 
 namespace MarsThreeSite.Controllers
 {
     public class HomeController : Controller
     {
         ILogger<HomeController> _logger;
+        IPageRepository _pageRepo;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IPageRepository respository)
         {
             _logger = logger;
+            _pageRepo = respository;
         }
 
         public IActionResult Index()
         {
-            ViewBag.Page = "/images/pics/golden2.jpg";
+            _pageRepo.GetPage();
+            // Start sida borde ha input parametern nullable. Om den är null så hä
             return View();
         }
 

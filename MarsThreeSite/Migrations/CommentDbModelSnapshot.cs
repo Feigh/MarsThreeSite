@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MarsThreeSite.Migrations
 {
-    [DbContext(typeof(CommentDb))]
+    [DbContext(typeof(SiteDb))]
     partial class CommentDbModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
@@ -18,6 +18,28 @@ namespace MarsThreeSite.Migrations
                 .HasAnnotation("ProductVersion", "2.1.4-rtm-31024")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+            modelBuilder.Entity("MarsThreeSite.Models.ChapiterData", b =>
+                {
+                    b.Property<int>("ChapiterId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnName("Id")
+                        .HasColumnType("integer")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("ChapiterName")
+                        .HasColumnName("Name");
+
+                    b.Property<int>("ChapiterNumber")
+                        .HasColumnName("Number")
+                        .HasColumnType("integer");
+
+                    b.Property<bool>("isDeleted");
+
+                    b.HasKey("ChapiterId");
+
+                    b.ToTable("Chapiters");
+                });
 
             modelBuilder.Entity("MarsThreeSite.Models.CommentModel", b =>
                 {
@@ -33,6 +55,45 @@ namespace MarsThreeSite.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Comments");
+                });
+
+            modelBuilder.Entity("MarsThreeSite.Models.PageModel", b =>
+                {
+                    b.Property<int>("PageId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnName("Id")
+                        .HasColumnType("integer")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int?>("ChapiterId");
+
+                    b.Property<string>("PageAddress")
+                        .IsRequired()
+                        .HasColumnName("Address");
+
+                    b.Property<string>("PageName")
+                        .HasColumnName("Name");
+
+                    b.Property<int>("PageNumber")
+                        .HasColumnName("Number")
+                        .HasColumnType("integer");
+
+                    b.Property<DateTime>("Published");
+
+                    b.Property<bool>("isDeleted");
+
+                    b.HasKey("PageId");
+
+                    b.HasIndex("ChapiterId");
+
+                    b.ToTable("Pages");
+                });
+
+            modelBuilder.Entity("MarsThreeSite.Models.PageModel", b =>
+                {
+                    b.HasOne("MarsThreeSite.Models.ChapiterData", "Chapiter_Id")
+                        .WithMany()
+                        .HasForeignKey("ChapiterId");
                 });
 #pragma warning restore 612, 618
         }

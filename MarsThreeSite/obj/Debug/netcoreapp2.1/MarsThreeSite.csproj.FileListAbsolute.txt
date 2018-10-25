@@ -34,4 +34,12 @@ c:\users\admin\source\repos\MarsThreeSite\MarsThreeSite\obj\Debug\netcoreapp2.1\
 c:\users\admin\source\repos\MarsThreeSite\MarsThreeSite\obj\Debug\netcoreapp2.1\MarsThreeSite.csproj.CopyComplete
 C:\Users\admin\source\repos\MarsThreeSite\MarsThreeSite\bin\Debug\netcoreapp2.1\MarsThreeLogging.dll
 C:\Users\admin\source\repos\MarsThreeSite\MarsThreeSite\bin\Debug\netcoreapp2.1\MarsThreeLogging.pdb
+C:\Users\admin\source\repos\MarsThreeSite\MarsThreeSite\bin\Debug\netcoreapp2.1\Photo\golden.jpg
+C:\Users\admin\source\repos\MarsThreeSite\MarsThreeSite\bin\Debug\netcoreapp2.1\Photo\golden2.jpg
+C:\Users\admin\source\repos\MarsThreeSite\MarsThreeSite\bin\Debug\netcoreapp2.1\Photo\golden3.jpg
+C:\Users\admin\source\repos\MarsThreeSite\MarsThreeSite\obj\Debug\netcoreapp2.1\Razor\Views\Page\Create.g.cshtml.cs
+C:\Users\admin\source\repos\MarsThreeSite\MarsThreeSite\obj\Debug\netcoreapp2.1\Razor\Views\Page\Delete.g.cshtml.cs
+C:\Users\admin\source\repos\MarsThreeSite\MarsThreeSite\obj\Debug\netcoreapp2.1\Razor\Views\Page\Details.g.cshtml.cs
+C:\Users\admin\source\repos\MarsThreeSite\MarsThreeSite\obj\Debug\netcoreapp2.1\Razor\Views\Page\Edit.g.cshtml.cs
+C:\Users\admin\source\repos\MarsThreeSite\MarsThreeSite\obj\Debug\netcoreapp2.1\Razor\Views\Page\Index.g.cshtml.cs
 C:\Users\admin\source\repos\MarsThreeSite\MarsThreeSite\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs

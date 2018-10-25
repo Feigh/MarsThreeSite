@@ -6,3 +6,4 @@ C:\Users\admin\source\repos\MarsThreeSite\MarsThreeLogging\obj\Debug\netcoreapp2
 C:\Users\admin\source\repos\MarsThreeSite\MarsThreeLogging\bin\Debug\netcoreapp2.1\MarsThreeLogging.pdb
 C:\Users\admin\source\repos\MarsThreeSite\MarsThreeLogging\obj\Debug\netcoreapp2.1\MarsThreeLogging.dll
 C:\Users\admin\source\repos\MarsThreeSite\MarsThreeLogging\obj\Debug\netcoreapp2.1\MarsThreeLogging.pdb
+C:\Users\admin\source\repos\MarsThreeSite\MarsThreeLogging\obj\Debug\netcoreapp2.1\MarsThreeLogging.csprojAssemblyReference.cache

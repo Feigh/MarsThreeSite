@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MarsThreeSite.Migrations
 {
-    [DbContext(typeof(CommentDb))]
+    [DbContext(typeof(SiteDb))]
     [Migration("20181010152151_InitMigration")]
     partial class InitMigration
     {

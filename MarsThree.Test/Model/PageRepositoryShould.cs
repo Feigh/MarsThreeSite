@@ -56,17 +56,29 @@ namespace MarsThree.Test
             
             sut = new PageRepository(context);
         }
+        [DataTestMethod]
+        [DataRow(1, "/Photo/golden.jpg")]
+        [DataRow(2, "/Photo/golden2.jpg")]
+        public void ReturnGetPageWByPageNumer(int number, string adress)
+        {
+            var result = sut.GetPage(number);
+            Assert.IsTrue(result.PageAddress == adress, $"The returned page was not page {number}, it was {result.PageNumber}");
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void ReturnExceptionIfGetPageWIfPageNotExist()
+        {
+            var result = sut.GetPage(5);
+        }
 
         [TestMethod]
         public void ReturnLatestGetPageWhenParametersAreNull()
         {
-            //Arrange
-
-            //Act
             var result = sut.GetPage();
             //Assert
             Assert.IsNotNull(result, "Object was null");
-            Assert.IsTrue(result.PageNumber == 3, @"The latest page was not page 3, it was {0} ", result.PageNumber);
+            Assert.IsTrue(result.PageNumber == 3, $"The latest page was not page 3, it was {result.PageNumber}");
         }
     }
 }

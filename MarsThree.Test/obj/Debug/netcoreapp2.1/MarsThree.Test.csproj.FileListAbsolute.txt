@@ -19,3 +19,6 @@ C:\Users\admin\source\repos\MarsThreeSite\MarsThree.Test\bin\Debug\netcoreapp2.1
 C:\Users\admin\source\repos\MarsThreeSite\MarsThree.Test\bin\Debug\netcoreapp2.1\MarsThreeSite.pdb
 C:\Users\admin\source\repos\MarsThreeSite\MarsThree.Test\bin\Debug\netcoreapp2.1\MarsThreeLogging.pdb
 C:\Users\admin\source\repos\MarsThreeSite\MarsThree.Test\obj\Debug\netcoreapp2.1\MarsThree.Test.csproj.CopyComplete
+C:\Users\admin\source\repos\MarsThreeSite\MarsThree.Test\bin\Debug\netcoreapp2.1\Photo\golden.jpg
+C:\Users\admin\source\repos\MarsThreeSite\MarsThree.Test\bin\Debug\netcoreapp2.1\Photo\golden2.jpg
+C:\Users\admin\source\repos\MarsThreeSite\MarsThree.Test\bin\Debug\netcoreapp2.1\Photo\golden3.jpg

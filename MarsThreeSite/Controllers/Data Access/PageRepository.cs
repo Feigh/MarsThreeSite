@@ -9,27 +9,49 @@ namespace MarsThreeSite.Controllers.Data_Access
 {
     public class PageRepository : IPageRepository
     {
-        private List<PageModel> _pageList;
-        public List<PageModel> PageList { get { return _pageList; } set { _pageList = value; } }
         private readonly SiteDb _dbContext;
 
+        public PageRepository() { }
         public PageRepository(SiteDb context)
         {
             _dbContext = context;
-            _pageList = new List<PageModel>();
+        }
+           // $"Test{variabel}"
+        virtual public PageModel GetPage()
+        {
+            try
+            {
+                var modelData = _dbContext.Pages.OrderByDescending(x => x.Published).First();
+                return modelData;
+            }
+            catch(InvalidOperationException ex)
+            {
+                throw;
+            }
 
         }
 
-        public PageModel GetPage()
+        virtual public PageModel GetPage(int pageNumber)
         {
-            var modelData = _dbContext.Pages.OrderByDescending(x => x.Published).FirstOrDefault();
-
-            return modelData;
+            try
+            {
+                var modelData = _dbContext.Pages.Where(x => x.PageNumber == pageNumber).First();
+                return modelData;
+            }
+            catch(InvalidOperationException ex)
+            {
+                throw;
+            }
         }
 
-        public List<PageModel> GetPages(DateTime date)
+        virtual public List<PageModel> GetPages(DateTime date)
         {
+            // Värt att testa skillnaden på IEnumerable och IEnumrator
+            // Testa att köra IColletion och de andra, testa yield
+            // Deffered execution och Lazy Evaluation
             throw new NotImplementedException();
         }
+
+
     }
 }

@@ -26,12 +26,6 @@ namespace MarsThreeSite.Controllers
         public IActionResult Index()
         {
             _pageRepo.GetPage();
-            // Start sida borde ha input parametern nullable. Om den är null så hä
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
             return View();
         }
 

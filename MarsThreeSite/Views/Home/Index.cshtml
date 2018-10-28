@@ -1,8 +1,10 @@
-﻿@{
+﻿@model MarsThreeSite.Models.PageModel
+@{
     ViewData["Title"] = "Start";
+    ViewData["addr"] = "~/images/Photo/golden.jpg";
 }
 <div class=".img-responsive text-center">
-    <img src=@ViewData["Pages"] class=".pageimage" alt="Sample Photo" />
+    <img src=@Url.Content(Model.PageAddress) class=".pageimage" alt="Sample Photo" />
 </div>
 <div class="bs-component">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">

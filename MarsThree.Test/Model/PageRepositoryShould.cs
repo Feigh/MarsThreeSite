@@ -28,7 +28,7 @@ namespace MarsThree.Test
             ChapiterData chapiter = new ChapiterData() { ChapiterId = 0, ChapiterName = "Doggies", ChapiterNumber = 2, isDeleted = false };
             context.Add(new PageModel()
             {
-                PageAddress = "/Photo/golden.jpg",
+                PageAddress = "/images/Photo/golden.jpg",
                 PageNumber = 1,
                 Published = new DateTime(2018, 10, 16),
                 Chapiter_Id = chapiter,
@@ -36,7 +36,7 @@ namespace MarsThree.Test
             });
             context.Add(new PageModel()
             {
-                PageAddress = "/Photo/golden2.jpg",
+                PageAddress = "/images/Photo/golden2.jpg",
                 PageNumber = 2,
                 Published = new DateTime(2018, 10, 17),
                 Chapiter_Id = chapiter,
@@ -44,7 +44,7 @@ namespace MarsThree.Test
             });
             context.Add(new PageModel()
             {
-                PageAddress = "/Photo/golden3.jpg",
+                PageAddress = "/images/Photo/golden3.jpg",
                 PageNumber = 3,
                 Published = new DateTime(2018, 10, 18),
                 Chapiter_Id = chapiter,
@@ -57,8 +57,8 @@ namespace MarsThree.Test
             sut = new PageRepository(context);
         }
         [DataTestMethod]
-        [DataRow(1, "/Photo/golden.jpg")]
-        [DataRow(2, "/Photo/golden2.jpg")]
+        [DataRow(1, "/images/Photo/golden.jpg")]
+        [DataRow(2, "/images/Photo/golden2.jpg")]
         public void ReturnGetPageWByPageNumer(int number, string adress)
         {
             var result = sut.GetPage(number);

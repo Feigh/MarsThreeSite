@@ -25,8 +25,7 @@ namespace MarsThreeSite.Controllers
 
         public IActionResult Index()
         {
-            _pageRepo.GetPage();
-            return View();
+            return View(_pageRepo.GetPage());
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

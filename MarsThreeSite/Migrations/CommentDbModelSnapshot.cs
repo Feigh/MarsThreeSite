@@ -74,9 +74,13 @@ namespace MarsThreeSite.Migrations
                     b.Property<string>("PageName")
                         .HasColumnName("Name");
 
+                    b.Property<int>("PageNext");
+
                     b.Property<int>("PageNumber")
                         .HasColumnName("Number")
                         .HasColumnType("integer");
+
+                    b.Property<int>("PagePrevious");
 
                     b.Property<DateTime>("Published");
 

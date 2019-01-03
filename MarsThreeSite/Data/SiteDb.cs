@@ -12,6 +12,7 @@ namespace MarsThreeSite.Data
 {
     public class SiteDb : DbContext, IDesignTimeDbContextFactory<SiteDb>
     {
+        public SiteDb(){ }
         public SiteDb(DbContextOptions<SiteDb> options) : base(options) { }
 
         public DbSet<CommentModel> Comments { get; set; }
@@ -32,4 +33,5 @@ namespace MarsThreeSite.Data
             return new SiteDb(builder.Options);
         }
     }
+
 }

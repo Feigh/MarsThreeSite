@@ -31,6 +31,8 @@ namespace MarsThree.Test
                 PageAddress = "/images/Photo/golden.jpg",
                 PageNumber = 1,
                 Published = new DateTime(2018, 10, 16),
+                PagePrevious = 0,
+                PageNext = 2,
                 Chapiter_Id = chapiter,
                 isDeleted = false
             });
@@ -39,6 +41,8 @@ namespace MarsThree.Test
                 PageAddress = "/images/Photo/golden2.jpg",
                 PageNumber = 2,
                 Published = new DateTime(2018, 10, 17),
+                PagePrevious = 1,
+                PageNext = 3,
                 Chapiter_Id = chapiter,
                 isDeleted = false
             });
@@ -47,6 +51,8 @@ namespace MarsThree.Test
                 PageAddress = "/images/Photo/golden3.jpg",
                 PageNumber = 3,
                 Published = new DateTime(2018, 10, 18),
+                PagePrevious = 2,
+                PageNext = 0,
                 Chapiter_Id = chapiter,
                 isDeleted = false
             });

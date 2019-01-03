@@ -47,6 +47,8 @@ namespace MarsThreeSite.Models
         public int PageNumber { get; set; }
         [Column("Name")]
         public string PageName { get; set; }
+        public int PagePrevious { get; set; }
+        public int PageNext { get; set; }
         [Required]
         [Column("Address")]
         public string PageAddress { get; set; }

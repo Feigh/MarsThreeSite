@@ -1,9 +1,0 @@
-C:\Users\admin\source\repos\MarsThreeSite\MarsThreeLogging\bin\Debug\netcoreapp2.1\MarsThreeLogging.deps.json
-C:\Users\admin\source\repos\MarsThreeSite\MarsThreeLogging\bin\Debug\netcoreapp2.1\MarsThreeLogging.dll
-C:\Users\admin\source\repos\MarsThreeSite\MarsThreeLogging\obj\Debug\netcoreapp2.1\MarsThreeLogging.csproj.CoreCompileInputs.cache
-C:\Users\admin\source\repos\MarsThreeSite\MarsThreeLogging\obj\Debug\netcoreapp2.1\MarsThreeLogging.AssemblyInfoInputs.cache
-C:\Users\admin\source\repos\MarsThreeSite\MarsThreeLogging\obj\Debug\netcoreapp2.1\MarsThreeLogging.AssemblyInfo.cs
-C:\Users\admin\source\repos\MarsThreeSite\MarsThreeLogging\bin\Debug\netcoreapp2.1\MarsThreeLogging.pdb
-C:\Users\admin\source\repos\MarsThreeSite\MarsThreeLogging\obj\Debug\netcoreapp2.1\MarsThreeLogging.dll
-C:\Users\admin\source\repos\MarsThreeSite\MarsThreeLogging\obj\Debug\netcoreapp2.1\MarsThreeLogging.pdb
-C:\Users\admin\source\repos\MarsThreeSite\MarsThreeLogging\obj\Debug\netcoreapp2.1\MarsThreeLogging.csprojAssemblyReference.cache
